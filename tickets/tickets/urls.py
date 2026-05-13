@@ -24,6 +24,7 @@ from logica.views import *
 
 router = DefaultRouter()
 router.register(r'municipios', MunicipioViewSet, basename='municipio')
+router.register(r'usuarios', UsuarioViewSet, basename='usuario')
 schema_view = get_schema_view(
     openapi.Info(
             title="API de Tickets de Transporte",
